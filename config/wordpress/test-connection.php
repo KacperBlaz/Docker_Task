@@ -3,8 +3,8 @@
 # $ php -f db-connect-test.php
 
 $dbname = 'wordpress';
-$dbuser = 'wordpress';
-$dbpass = 'Slasher33';
+$dbuser = 'dummyuser';
+$dbpass = 'dummyuser123';
 $dbhost = 'database';
 
 $link = mysqli_connect($dbhost, $dbuser, $dbpass) or die("Unable to Connect to '$dbhost'");

@@ -5,4 +5,4 @@ Steps to run Wordpress from docker-compose :
 
 If you would like to stop docker-compose Wordpress:
 
-make stop
+1. make stop
