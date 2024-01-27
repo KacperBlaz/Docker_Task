@@ -6,7 +6,7 @@ ARG MYSQL_USER
 ARG MYSQL_PASSWORD
 
 RUN apt-get update && \
-    apt-get install -y mysql-server && \
+    apt-get install -y mysql-server openssl && \
     rm -rf /var/lib/apt/lists/* && \
     chown -R mysql:mysql /var/lib/mysql
 
@@ -17,5 +17,7 @@ RUN /etc/init.d/mysql start && \
 EXPOSE 3306
 
 USER mysql
+
+#CMD ["/bin/bash", "-c", "sleep infinity"]
 
 CMD ["mysqld"]
