@@ -18,6 +18,4 @@ EXPOSE 3306
 
 USER mysql
 
-#CMD ["/bin/bash", "-c", "sleep infinity"]
-
 CMD ["mysqld"]
