@@ -1,7 +1,6 @@
-Steps to run Wordpress from docker-compose :
+Steps to run Wordpress locally with HTTPS from docker-compose :
 
-1. make build
-2. make start
+1. make start
 
 If you would like to stop docker-compose Wordpress:
 
